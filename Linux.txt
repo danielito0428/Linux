@@ -1,0 +1,7 @@
+---------------------How to share folders in VMWare--------------------------
+
+1. vmware-hgfsclient ----> Verificar si la carpeta se compartio
+2. mkdir /mnt/hgfs/shared ----> se crea la carpeta compartida en el guest 
+3. sudo nano /etc/fstab
+4. Use shared folders between VMWare guest and host
+.host:/shared    /mnt/hgfs/shared    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0
